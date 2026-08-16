@@ -1,0 +1,1 @@
+nvidia-vipe @ git+https://github.com/samaust/vipe.git@tridi

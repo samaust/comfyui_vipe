@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "comfyui-vipe"
+version = "0.1.0"
+description = "ComfyUI nodes for NVIDIA ViPE annotations"
+requires-python = ">=3.14,<3.15"
+dependencies = [
+  "nvidia-vipe @ git+https://github.com/samaust/vipe.git@tridi",
+]
+
+[tool.setuptools]
+packages = ["comfyui_vipe", "comfyui_vipe.nodes", "comfyui_vipe.utils"]
+
+[tool.setuptools.package-dir]
+comfyui_vipe = "."
+"comfyui_vipe.nodes" = "nodes"
+"comfyui_vipe.utils" = "utils"
