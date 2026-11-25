@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "comfyui-vipe"
 version = "0.1.0"
 description = "ComfyUI nodes for NVIDIA ViPE annotations"
-requires-python = ">=3.14,<3.15"
+requires-python = ">=3.14"
 dependencies = [
   "nvidia-vipe @ git+https://github.com/samaust/vipe.git@tridi",
 ]
